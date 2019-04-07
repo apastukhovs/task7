@@ -26,7 +26,7 @@
 
 		<div style="color: #FF0000; font-size: 15px;"><strong>%MESSEGEERROR%</strong></div>
     	<label for="messege">Message:</label>
-    	<textarea id="messege" name="messege" placeholder="Write something.." style="height:200px">%MESSEGE%</textarea>
+    	<textarea id="messege" name="messege" placeholder="Type Massege" style="height:200px">%MESSEGE%</textarea>
 
     	<input type="submit" name="submit" value="Submit">
 	</form>

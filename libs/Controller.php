@@ -24,6 +24,7 @@ class Controller
                 $this->model->setDate($date);   
                 $this->model->setUserIpAdress($userIpAdress);
                 $this->pageSendMail();
+                var_dump($date);
 			}
 			else
 			{

@@ -38,7 +38,7 @@ class Model
                     '%MESSEGE%'=>$this->messege,
                     '%SUCCESMAIL%'=>$this->successMail,
                     '%SUBJECT%'=>$this->subject,
-                        );	
+                    );	
    }
 	
 	public function checkForm()
@@ -86,15 +86,12 @@ class Model
    
 	public function sendEmail()
 	{
-        $destination = EMAIL;
+        $adress = EMAIL;
         $subject = $this->subject;
-        $messege = $this->messege."\r\n";
-        $messege .= "Date: ".$this->data."\r\n";
+        $messege = $this->messege."\r\n";        
         $messege .= "UserIP: ".$this->userIpAdress."\r\n";
         $headers = "From: ".$this->email;
-        var_dump($this->data);
-
-        return mail($destination, $subject, $messege, $headers);
+        return mail($adress, $subject, $messege, $headers);
         
     }
     
